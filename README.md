@@ -124,9 +124,9 @@ MAIN PROC
     MOV AX, @DATA
     MOV DS, AX
 
-    MOV AX, 1234H       ; Load 16-bit value into AX
-    MOV BX, AX          ; Copy AX into BX
-    MOV RESULT, BX      ; Store BX in memory
+    MOV AX, 1234H       
+    MOV BX, AX          
+    MOV RESULT, BX      
 
     MOV AH, 4CH
     INT 21H
@@ -139,6 +139,7 @@ END MAIN
 -   AX = `1234H`
 -   BX = `1234H`
 -   RESULT = `1234H`
+<img width="360" height="375" alt="image" src="https://github.com/user-attachments/assets/12e12ed3-a62f-49a6-ad54-02398c438994" />
 
 ### Explanation
 
@@ -169,6 +170,8 @@ Write an 8086 assembly language program to exchange the contents of two
  
 
 ### Expected Result
+<img width="370" height="387" alt="image" src="https://github.com/user-attachments/assets/e2b58986-5b9e-479a-9040-dfced7385dff" />
+
 
   Memory Variable     Before Execution   After Execution
   ----------------- ------------------ -----------------
